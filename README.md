@@ -1,6 +1,6 @@
 This is a python script that uses [OpenCV](http://opencv.org) to monitor a video feed for
-large movements (big changes in the current frame relative to last n
-frames), and then calls/texts you. I am using it to monitor the places
+large movements (big changes in the current frame relative to the last n
+frames), and then calls/texts you about it. I am using it to monitor the places
 around my house (e.g., my porch) people may visit at 3am with less than
 honorable intentions. Soon, I will be voicing my displeasure to them via
 a wireless bluetooth speaker. But that is for a future commit.
@@ -12,7 +12,7 @@ Install the two major dependencies:
 	brew install opencv # assuming on a mac, with details omitted
 	pip install numpy
 
-I found [this guide](http://www.jeffreythompson.org/blog/2013/08/22/update-installing-opencv-on-mac-mountain-lion) particularly helpful for setting up OpenCV and its Python bridge on a mac. YMMV. Then, download the above `sentry.py` script to the directory of your choosing.
+I found [this guide](http://www.jeffreythompson.org/blog/2013/08/22/update-installing-opencv-on-mac-mountain-lion) particularly helpful for setting up OpenCV and its Python bridge in OS X. YMMV. Then, download the above `sentry.py` script to the directory of your choosing.
 
 ## Usage
 
@@ -42,8 +42,8 @@ optional arguments:
                         detection; 1 is super twitchy
 ```
 
-The ``acct`` and ``token`` options refer to [your Twilio credentials](https://www.twilio.com/user/account). The ``from`` number is the Twilio-provisioned phone number from which you would like to call and text. The two options, ``to1`` and ``to2`` will receive the calls and texts. ``sensitivity`` allows you to control how twitchy the motion detection is; I think the defaults are pretty sensible.
+The ``acct`` and ``token`` options refer to [your Twilio credentials](https://www.twilio.com/user/account). The ``from`` number is the Twilio-provisioned phone number from which you would like to call and text. The two options, ``to1`` and ``to2`` will receive the calls and texts. ``sensitivity`` allows you to control how twitchy the motion detection is; the defaults are pretty sensible.
 
 ## Credits
 
-I borrowed heavily [Derek Simkowiak's work](http://derek.simkowiak.net/motion-tracking-with-python/). You should check it out, it's great stuff. Thanks for making it available, Derek!
+I borrowed heavily from [Derek Simkowiak's work](http://derek.simkowiak.net/motion-tracking-with-python/). You should check it out, it's great stuff. Thanks for making it available, Derek!

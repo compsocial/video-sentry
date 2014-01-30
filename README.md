@@ -42,7 +42,7 @@ optional arguments:
                         detection; 1 is super twitchy
 ```
 
-The ``acct`` and ``token`` options refer to [your Twilio credentials](https://www.twilio.com/user/account). The ``from`` number is the Twilio-provisioned phone number from which you would like to call and text. The two options, ``to1`` and ``to2`` will receive the calls and texts. ``sensitivity`` allows you to control how twitchy the motion detection is; the defaults are pretty sensible.
+The ``acct`` and ``token`` options refer to [your Twilio credentials](https://www.twilio.com/user/account). The ``from`` number is the Twilio-provisioned phone number from which you would like to call and text. The two options, ``to1`` and ``to2`` will receive the calls and texts. ``sensitivity`` lets you to control how twitchy the motion detection is; the defaults are pretty sensible.
 
 ## Credits
 
